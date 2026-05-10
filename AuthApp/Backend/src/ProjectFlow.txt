@@ -1,0 +1,54 @@
+auth-system/
+│
+├── src/
+│   ├── config/
+│   │   ├── db.js
+│   │   ├── redis.js
+│   │   └── mailer.js
+│   │
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   ├── user.controller.js
+│   │   └── admin.controller.js
+│   │
+│   ├── middleware/
+│   │   ├── auth.middleware.js
+│   │   ├── role.middleware.js
+│   │   ├── error.middleware.js
+│   │   ├── validation.middleware.js
+│   │   ├── rateLimiter.middleware.js
+│   │   └── security.middleware.js
+│   │
+│   ├── models/
+│   │   ├── User.model.js
+│   │   ├── Token.model.js
+│   │   └── Session.model.js
+│   │
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── user.routes.js
+│   │   └── admin.routes.js
+│   │
+│   ├── services/
+│   │   ├── auth.service.js
+│   │   ├── token.service.js
+│   │   └── email.service.js
+│   │
+│   ├── utils/
+│   │   ├── generateToken.js
+│   │   ├── hashPassword.js
+│   │   ├── asyncHandler.js
+│   │   ├── ApiError.js
+│   │   └── ApiResponse.js
+│   │
+│   ├── validators/
+│   │   ├── auth.validator.js
+│   │   └── user.validator.js
+│   │
+│   ├── app.js
+│   └── server.js
+│
+├── .env
+├── package.json
+├── .gitignore
+└── README.md
